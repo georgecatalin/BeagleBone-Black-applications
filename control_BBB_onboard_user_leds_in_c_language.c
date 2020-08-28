@@ -3,7 +3,7 @@
 Name: Program to control the USER LEDs of BeagleBone Black written in C language
 Author: George Calin (george.calin@gmail.com)
 Version: 0.1
-Description: This program controls the USER LED no.1 concerning trigger and brightness
+Description: This program controls the USER LEDs concerning trigger and brightness
 ==========================================================
 */
 
