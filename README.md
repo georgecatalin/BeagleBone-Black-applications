@@ -10,5 +10,5 @@ If you want to find out more about BeagleBone Black, go to http://beagleboard.or
 
 
 
-![GitHub Logo](/images/logo.png)
-Format: ![Alt Text](url)
+![BeagleBone Black](connect.png)
+
