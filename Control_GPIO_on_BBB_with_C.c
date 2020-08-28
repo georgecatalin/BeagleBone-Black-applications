@@ -1,4 +1,4 @@
-	/*
+/*
 ==========================================================
 Name: Program to control the GPIOs of BeagleBone Black written in C language
 Author: George Calin (george.calin@gmail.com)
@@ -103,7 +103,7 @@ int write_to_direction_file(uint8_t led_number, char * direction)
 		return (-1);
 	}
 
-	printf("I have written in the file 'direction' of the gpio%d",led_number);
+	printf("I have written in the file 'direction' of the gpio%d.\n",led_number);
 	return (0);
 }
 
@@ -132,7 +132,7 @@ int write_to_value_file(uint8_t led_number, char * value)
 			return (-1);
 		}
 
-		printf("I have written in the file 'value' of the gpio%d",led_number);
+		printf("I have written in the file 'value' of the gpio%d.\n",led_number);
 		return (0);
 }
 
@@ -263,7 +263,7 @@ int write_to_export_file(uint8_t led_no)
 
 	snprintf(buffer_convert_int_to_string ,sizeof(buffer_convert_int_to_string),"%d",led_no);
 
-	printf("...................................%s\n",buffer_convert_int_to_string);
+	//printf("...................................%s\n",buffer_convert_int_to_string);
 
 	fd=open(path,O_WRONLY);
 
