@@ -33,7 +33,6 @@ Description: This program controls the USER LEDs concerning trigger and brightne
 /* *** define the path to USER LED 1 directory in the 'sys' directory *** */
 #define PATH_TO_CONFIG_USER_LED1 "/sys/class/leds/beaglebone:green:usr1"
 
-#define USER_LED_NUMBER 0
 #define SIZE_IN_LETTERS 100
 
 int enter_user_led;
