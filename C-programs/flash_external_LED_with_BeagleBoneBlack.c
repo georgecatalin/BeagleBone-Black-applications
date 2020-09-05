@@ -154,6 +154,17 @@ int write_to_direction_file(uint8_t led_number, char * direction)
 	}
 
 	printf("I have written in the file 'direction' of the gpio%d.\n",led_number);
+	
+	if(close(fd)<0)
+	{
+		printf("There was an error when closing the file 'direction' in gpio%d. The error number is %d.\n",enter_gpio_set, errno);
+		return (-1);
+	}
+
+	printf("I have closed the file 'direction' in gpio%d\n",enter_gpio_set);
+	printf("[.......................................]\n");
+	
+	
 	return (0);
 }
 
@@ -183,6 +194,17 @@ int write_to_value_file(uint8_t led_number, char * value)
 		}
 
 		printf("I have written in the file 'value' of the gpio%d.\n",led_number);
+	
+	
+	        if(close(fd)<0)
+	        {
+		printf("There was an error when closing the file 'value' in gpio%d. The error number is %d.\n",enter_gpio_set, errno);
+		return (-1);
+	        }
+
+	        printf("I have closed the file 'value' in gpio%d\n",enter_gpio_set);
+	        printf("[.......................................]\n");
+	
 		return (0);
 }
 
